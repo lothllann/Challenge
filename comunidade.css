@@ -1,0 +1,168 @@
+.container {
+    grid-template-areas: "logo busca user" "menuu cod_comun cod_comun  ";
+}
+
+.comunidade a {
+    background-color: #5081FB;
+    opacity: 1;
+}
+
+.comunidade span {
+    color: white;
+}
+
+.comunidade a:hover {
+    background-color: #7BA4FC;
+}
+
+.edit_code a {
+    background-color: rgba(80, 129, 251, 0.08);
+}
+
+.edit_code a:hover {
+    background-color: rgba(80, 129, 251, 0.16);
+}
+
+.edit_code a img {
+    height: 16px;
+}
+
+.edit_code span {
+    color: rgba(255, 255, 255, 0.16);
+}
+
+.cod_comun {
+    grid-area: cod_comun;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 24px;
+    grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+}
+
+.cod_comun .codigo {
+    width: calc(100% - 48px);
+    height: 284px;
+    border: 24px solid #6B83FF;
+    border-radius: 8px;
+}
+
+.cod_comun .preview {
+    display: block;
+    padding: 33px 20px 12px 12px;
+    box-sizing: border-box;
+    height: 100%;
+    white-space: pre-wrap;
+}
+
+.cod_comun .codigo.borda_verde {
+    border-color: #9AFF6B;
+}
+
+.cod_comun .codigo.borda_rosa {
+    border-color: #FF6BCD;
+}
+
+.cards {
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+}
+
+.cards h1 {
+    margin: 15px auto 8px 24px;
+    font-size: 21px;
+    line-height: 31.5px;
+    font-style: normal;
+}
+
+.reactions {
+    display: flex;
+    margin: 35px 24px 30px 26px;
+    justify-content: space-between;
+}
+
+.reactions span {
+    margin-left: 10px;
+}
+
+.coments_likes {
+    display: flex;
+}
+
+.dono_codigo {
+    display: flex;
+}
+
+.cards p {
+    margin: 0 24px;
+    line-height: 24px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.react,
+.dono_codigo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.dono_codigo:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: 0.2s ease-in-out;
+}
+
+.dono_codigo>img {
+    height: 24px;
+    width: 24px;
+}
+
+.react {
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.react:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: 0.2s ease-in-out;
+}
+
+.bolinhas {
+    display: flex;
+    position: relative;
+    z-index: 100;
+    top: calc(-308px + 12px);
+    left: calc(24px + 12px);
+}
+
+.bolinhas div {
+    width: 9px;
+    height: 9px;
+}
+
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+/*
+RESPONSIVO
+*/
+
+@media screen and (max-width: 1100px) {
+    .cod_comun {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0px;
+    }
+    .cards {
+        width: 100%;
+        min-width: 386px;
+        margin-bottom: 32px;
+    }
+    .cards:first-child {
+        margin-top: 40px;
+    }
+}

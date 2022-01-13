@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Alura Challenge</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="dracula.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <section class="container">
+
+        <section class="logo">
+            <img src="./src/img/Logo.svg" alt="logo da alura">
+        </section>
+
+
+        <section class="busca">
+            <input type="text" for="buscar" id="buscar" placeholder="Busque por algo">
+            <button type="submit" id="buscar_mobile"><img src="./src/img/busca_mobile.svg" alt="icone de pesquisa"></button>
+        </section>
+
+        <div class="menu_ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu_MobileTablet">
+            <div class="container_menu">
+                <div class="edit_code">
+                    <a href="index.html"><img src="./src/img/cod.svg" alt=""></a>
+                    <span>Editor de Código</span>
+                </div>
+                <div class="comunidade">
+                    <a href="comunidade.html"><img src="./src/img/Vector.svg " alt=""></a>
+                    <span>Comunidade</span>
+                </div>
+
+                <span class="separador"></span>
+
+                <div class="img_usuario">
+                    <div><img src="./src/img/minha_foto 1.svg" alt="foto de perfil"></div>
+                    <span>Nick Ruppenthal</span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <section class="user">
+            <div class="img_usuario">
+                <div><img src="./src/img/minha_foto 1.svg" alt="foto de perfil"></div>
+                <span>Nick Ruppenthal</span>
+            </div>
+        </section>
+
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="edit_code">
+                <a href="index.html"><img src="./src/img/cod.svg" alt=""></a>
+                <span>Editor de Código</span>
+            </div>
+            <div class="comunidade">
+                <a href="comunidade.html"><img src="./src/img/Vector.svg " alt=""></a>
+                <span>Comunidade</span>
+            </div>
+        </section>
+
+        <section class="code">
+
+            <div class="codigo">
+                <!-- <textarea type="text" id="seu_codigo" contenteditable="true" class="hljs"></textarea> -->
+                <code class="preview hljs" contenteditable="true" aria-label="Editor">
+btnHL.addEventListener('click', () => {
+    aplicaHighlight()
+})
+            </code>
+            </div>
+            <button id="highlight">Visualizar com o Highlight</button>
+            <div class="bolinhas">
+                <div class="vermelho"></div>
+                <div class="amarelho"></div>
+                <div class="verde"></div>
+            </div>
+        </section>
+
+        <section class="outros">
+
+            <h2>Seu Projeto</h2>
+            <input type="text" id="nome_projeto" placeholder="Nome do seu Projeto">
+            <textarea type="text" id="descricao_projeto" placeholder="Descrição do seu projeto"></textarea>
+
+            <h2>personalização</h2>
+            <select id="linguagens_de_programacao" class="linguagem">
+            <option value="javascript">JavaScript</option>            
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>            
+        </select>
+
+            <button type="submit" id="color_picker" data-open-chooseColor></button>
+
+            <button type="submit" id="save">Salvar projeto</button>
+        </section>
+
+    </section>
+
+    <section class="choose_color_container" data-container-chooseColor>
+        <div class="choose_color">
+            <h2>Escolha a cor da Borda</h2>
+            <div class="corBorda rosaa" data-btn-chooseColor></div>
+            <div class="corBorda azul" data-btn-chooseColor></div>
+            <div class="corBorda laranja " data-btn-chooseColor></div>
+            <div class="corBorda roxo" data-btn-chooseColor></div>
+            <div class="corBorda verdee" data-btn-chooseColor></div>
+        </div>
+
+        <div class="buttons_color">
+            <button class="aplicar" data-aplicar>Aplicar</button>
+            <button class="saiir" data-sair>X</button>
+        </div>
+
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
