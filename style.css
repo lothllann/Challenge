@@ -384,7 +384,7 @@ coisas a direita
     width: 244px;
     height: 278px;
     right: calc(32px + 43px);
-    bottom: 484px;
+    top: 175px;
     padding: 16px;
     background-color: #5081FB;
     border-radius: 8px;
@@ -458,7 +458,7 @@ coisas a direita
     height: 45px;
     position: absolute;
     right: calc(32px + 35px);
-    bottom: calc(471px + 8px);
+    top: calc(401px + 8px);
 }
 
 .buttons_color.active {
